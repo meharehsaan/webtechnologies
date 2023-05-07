@@ -44,7 +44,7 @@ public class bank {
 			customer p = (customer) cust.get(i);
 			if (p.getId().equals(id)) {
 				System.out.println("Customer exists\n");
-				// p.print();
+				p.print();
 				return true;
 			}
 		}
@@ -149,5 +149,15 @@ class customer {
 
 	public String getId() {
 		return id;
+	}
+
+	public void print(){
+	
+		System.out.println("Customer Information");
+
+		System.out.println("Name = " + name);
+		System.out.println("ID = " + id);
+		System.out.println("Age = " + age);
+		System.out.println("Balance = " + balance + "\n");
 	}
 }
