@@ -1,3 +1,4 @@
+/* ObjectInput and OutputStreams are used to do serialization */
 package streams;
 import java.util.*;
 import java.io.*;

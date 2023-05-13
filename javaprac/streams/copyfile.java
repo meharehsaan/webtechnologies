@@ -3,7 +3,7 @@
 import java.util.*;
 import java.io.*;
 
-public class streams {
+public class copyfile {
     public static void main(String[] args) {
         
         FileInputStream fin = null;
