@@ -1,7 +1,7 @@
 
 //did not give an error 
 
-public class file {
+public class truefalse {
     public static void main(String[] args) {
         boolean var = false;
         if (var = true) {

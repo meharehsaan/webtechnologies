@@ -137,7 +137,7 @@ class Tetrahedron extends ThreeDimensionalShape {
     }
 }
 
-public class Driver {
+public class Shapes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
