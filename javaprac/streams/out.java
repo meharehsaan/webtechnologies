@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
 
+// low level out stream
 public class out {
     public static void main(String[] args) throws IOException {
         Scanner  in = new Scanner(System.in);

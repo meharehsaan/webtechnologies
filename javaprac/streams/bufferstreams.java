@@ -1,6 +1,7 @@
-package streams;
+
+// package streams;
 import java.io.*;
-import java.util.*;
+// import java.util.*;
 
 public class bufferstreams {
     public static void main(String[] args) {
@@ -17,11 +18,11 @@ public class bufferstreams {
                     // System.out.println();
                     bos1.write(buffer, 0, bytes);
                 }
-                System.out.println("\n");
+                System.out.println("success\n");
                 bis1.close();
                 bos1.close();
             } catch (IOException e) {
-                System.out.println("helsklsdk");
+                System.out.println("Exception occuring");
             }
         } catch (FileNotFoundException e) {
             System.out.println("File not exists");

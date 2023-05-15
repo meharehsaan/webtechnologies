@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class exterlizable {
+public class externalizable {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         
@@ -35,7 +35,7 @@ public class exterlizable {
 
 
 
-public class Person implements Externalizable {
+class Person implements Externalizable {
 
     private String name;
     private int age;

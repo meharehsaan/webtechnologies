@@ -1,6 +1,5 @@
 // Must create file.txt before compilation of this code 
-
-import java.util.*;
+// import java.util.*;
 import java.io.*;
 
 public class copyfile {
@@ -9,7 +8,7 @@ public class copyfile {
         FileInputStream fin = null;
         FileOutputStream fos = null;
         String str = " ";
-        int eof = -1;
+        int eof = -1;   //no eof keyword exists in java
 
         try{
             fin = new FileInputStream("file.txt");
