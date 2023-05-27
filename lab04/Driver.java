@@ -30,14 +30,14 @@ public class Driver{
 		Scanner in = new Scanner(System.in);
                 System.out.println("Enter id :: ");
                 int id = in.nextInt();
-		Scanner is = new Scanner(System.in);
+      		in.nextLine();   // giving /n
                 System.out.println("Enter name :: ");
-                String name = is.nextLine();
+                String name = in.nextLine();
                 System.out.println("Enter salary :: ");
-                double salary = is.nextDouble();
-		Scanner ia = new Scanner(System.in);
+                double salary = in.nextDouble();
+		in.nextLine();   // giving /n
                 System.out.println("Enter rank :: ");
-                String rank = ia.nextLine();
+                String rank = in.nextLine();
 
 		Employee e = new Employee(id, name, salary, rank);
 		e.print();
