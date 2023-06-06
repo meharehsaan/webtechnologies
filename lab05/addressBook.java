@@ -9,8 +9,8 @@ class addressBook{
 	public addressBook(){
 		try{
 	    		Class.forName("com.mysql.cj.jdbc.Driver");
-	    		String url = "jdbc:mysql://127.0.0.1:3306/namedb";
-		    	con = DriverManager.getConnection(url,"root","2112");
+	    		String url = "jdbc:mysql://127.0.0.1:3306/mydata";
+		    	con = DriverManager.getConnection(url,"root","Mehar@2762");
 		    	st = con.createStatement();
 		}catch(SQLException | ClassNotFoundException e){
 			System.out.println("Occurs Exception in constructor" + e);
@@ -31,7 +31,7 @@ class addressBook{
 		System.out.println("Enter Phone Number :: ");
 		int phone = in.nextInt();
 		
-		String query="insert into info(name,add,phone) values('"+name+"', '"+add+"', "+phone+")";
+		String query="insert into info(username,address,phone) values('"+name+"', '"+add+"', "+phone+")";
 
 		int rs = st.executeUpdate(query);
 
@@ -54,7 +54,7 @@ class addressBook{
    
     		if(rs.next()){
 	    		String name1 = rs.getString("username");
-  			System.out.println("Name: "+ name1);
+  			System.out.println("Name: exits which is "+ name1);
 	  	}
      		else{
     	 		System.out.println("No record found");
@@ -67,10 +67,10 @@ class addressBook{
 		System.out.print("Please enter Name to search: ");
 		String name = in.nextLine();
 
-     		String query="Select * from info where username='"+name+"' ";
-     		ResultSet rs = st.executeQuery(query);
-		String dbname = rs.getString("username");
-		if(name == dbname){
+     		//String query="Select * from info where username='"+name+"' ";
+     		//ResultSet rs = st.executeQuery(query);
+		//String dbname = rs.getString("username");
+		if(1==1){
 			String query1 = "DELETE FROM info where username = '"+name+"' ";
 			int rs1 = st.executeUpdate(query1);
 			if(rs1 > 0){
