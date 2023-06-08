@@ -10,7 +10,7 @@ class addressBook{
 		try{
 	    		Class.forName("com.mysql.cj.jdbc.Driver");
 	    		String url = "jdbc:mysql://127.0.0.1:3306/mydata";
-		    	con = DriverManager.getConnection(url,"root","Mehar@2762");
+		    	con = DriverManager.getConnection(url,"root","root");
 		    	st = con.createStatement();
 		}catch(SQLException | ClassNotFoundException e){
 			System.out.println("Occurs Exception in constructor" + e);
