@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Form Validation</title>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <form name="employer" onsubmit="return validate()" method="post">
+      <h1>Sign Up Form</h1>
+      <table border="0" cellpadding="5" cellspacing="0" width="600">
+        <tr>
+          <td>
+            <label for="FirstName">First</label>,
+            <label for="LastName">Last Name*:</label>
+          </td>
+          <td>
+            <input
+              name="FirstName"
+              type="text"
+              maxlength="60"
+              id="fname"
+              style="width: 100%; max-width: 146px"
+            />
+            <input
+              name="LastName"
+              type="text"
+              maxlength="60"
+              id="lname"
+              style="width: 100%; max-width: 146px"
+            />
+            <div id="name"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Organization">Organization:</label>
+          </td>
+          <td>
+            <input
+              name="Organization"
+              type="text"
+              maxlength="60"
+              id="organization"
+              style="width: 100%; max-width: 300px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="FromEmailAddress">Email address*:</label>
+          </td>
+          <td>
+            <input
+              name="FromEmailAddress"
+              type="text"
+              maxlength="60"
+              id="email"
+              style="width: 100%; max-width: 300px"
+            />
+            <div id="5"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="WorkPhone">Work Phone:</label>
+          </td>
+          <td>
+            <input
+              name="WorkPhone"
+              type="text"
+              maxlength="43"
+              id="wphone"
+              onKeyPress="return letternumber(event)"
+              style="width: 100%; max-width: 250px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="HomePhone">Home Phone:</label>
+          </td>
+          <td>
+            <input
+              name="HomePhone"
+              type="text"
+              maxlength="43"
+              id="hphone"
+              onKeyPress="return letternumber(event)"
+              style="width: 100%; max-width: 250px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="CellPhone">Cell Phone:</label>
+          </td>
+          <td>
+            <input
+              name="CellPhone"
+              type="text"
+              maxlength="43"
+              id="cphone"
+              onKeyPress="return letternumber(event)"
+              style="width: 100%; max-width: 250px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Fax">Fax:</label>
+          </td>
+          <td>
+            <input
+              name="Fax"
+              type="text"
+              maxlength="43"
+              id="fax"
+              style="width: 100%; max-width: 250px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="StreetAddress1">Address 1*:</label>
+          </td>
+          <td>
+            <input
+              name="StreetAddress1"
+              type="text"
+              maxlength="120"
+              id="address1"
+              style="width: 100%; max-width: 350px"
+            />
+            <div id="1"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="StreetAddress2">Address 2:</label>
+          </td>
+          <td>
+            <input
+              name="StreetAddress2"
+              type="text"
+              maxlength="120"
+              id="address2"
+              style="width: 100%; max-width: 350px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="City">City*:</label>
+          </td>
+          <td>
+            <input
+              name="City"
+              type="text"
+              maxlength="120"
+              id="city"
+              style="width: 100%; max-width: 300px"
+            />
+            <div id="2"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="State">State/Province:</label>
+          </td>
+          <td>
+            <input
+              name="State"
+              type="text"
+              maxlength="120"
+              id="state"
+              style="width: 100%; max-width: 300px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Zip">Zip/Postal Code:</label>
+          </td>
+          <td>
+            <input
+              name="Zip"
+              type="text"
+              maxlength="30"
+              id="pcode"
+              style="width: 100%; max-width: 100px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Country">Country*:</label>
+          </td>
+          <td>
+            <input
+              name="Country"
+              type="text"
+              maxlength="120"
+              id="country"
+              style="width: 100%; max-width: 300px"
+            />
+            <div id="3"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>* - required fields</td>
+
+          <td>
+            <input name="Submit" type="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
