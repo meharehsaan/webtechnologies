@@ -14,27 +14,27 @@ class Book {
         this.ISBN = ISBN;
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return title;
     }
 
-    public String getAuthor(){
+    public String getAuthor() {
         return author;
     }
 
-    public String getISBN(){
+    public String getISBN() {
         return ISBN;
     }
 
-    public void setTitle(String t){
+    public void setTitle(String t) {
         title = t;
     }
 
-    public void setAuthor(String a){
+    public void setAuthor(String a) {
         author = a;
     }
 
-    public void setISBN(String i){
+    public void setISBN(String i) {
         ISBN = i;
     }
 }
@@ -50,7 +50,7 @@ public class BookServlet extends HttpServlet {
         AL.add(new Book("C#", "Svetlin Nakov", "9789544007737"));
     }
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    public void doGet(HttpServletResponse response)
             throws ServletException, IOException {
 
         response.setContentType("text/html");
@@ -82,17 +82,20 @@ public class BookServlet extends HttpServlet {
             throws ServletException, IOException {
 
         String action = request.getParameter("action");
-        
+        System.out.println(action);
         if (action != null) {
             switch (action) {
                 case "create":
                     createBook(request);
+                    doGet(response);
                     break;
                 case "update":
                     updateBook(request);
+                    doGet(response);
                     break;
                 case "delete":
                     deleteBook(request);
+                    doGet(response);
                     break;
             }
         }
@@ -104,7 +107,7 @@ public class BookServlet extends HttpServlet {
         String title = request.getParameter("title");
         String author = request.getParameter("author");
         String ISBN = request.getParameter("isbn");
-
+        System.out.println("hello");
         Book newBook = new Book(title, author, ISBN);
         AL.add(newBook);
     }
