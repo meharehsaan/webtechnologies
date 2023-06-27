@@ -40,7 +40,7 @@ class Book {
 }
 
 
-public class BookSer extends HttpServlet {
+public class BookServlet extends HttpServlet {
     ArrayList<Book> AL;
 
     public void init(ServletConfig scfg) {

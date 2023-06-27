@@ -4,7 +4,7 @@
 
 	<servlet>
 		<servlet-name>1st</servlet-name>
-		<servlet-class>BookSer</servlet-class>
+		<servlet-class>BookServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
