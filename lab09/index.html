@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Application</title>
+</head>
+<body>
+    <h3>Add User</h3>
+    <form action="create" method="post">
+        <input type="hidden" name="action" value="create">
+        <label for="title">Address:</label>
+        <input type="text" id="address" name="name" required>
+        <br>
+        <label for="author">Phone:</label>
+        <input type="text" id="password" name="password" required>
+        <br>
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <input type="submit" value="Add user">
+    </form>
+
+    <h3>Update User</h3>
+    <form action="update" method="post">
+        <input type="hidden" name="action" value="update">
+        <br>
+        <label for="address_update">New address:</label>
+        <input type="text" id="address_update" name="name" required>
+        <br>
+        <label for="author_update">New Phone:</label>
+        <input type="text" id="author_update" name="password" required>
+        <br>
+        <label for="username_update">New Name:</label>
+        <input type="text" id="username_update" name="username" required>
+        <br>
+        <input type="submit" value="Update user">
+    </form>
+
+    <h3>Delete User</h3>
+    <form action="delete" method="post">
+        <input type="hidden" name="action" value="delete">
+        <label for="username_delete">Name:</label>
+        <input type="text" id="username_delete" name="username" required>
+        <br>
+        <input type="submit" value="Delete user">
+    </form>
+</body>
+</html>

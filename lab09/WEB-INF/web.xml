@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+	<servlet>
+		<servlet-name>1st</servlet-name>
+		<servlet-class>personInfo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>1st</servlet-name>
+		<url-pattern>/create</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>2nd</servlet-name>
+		<servlet-class>personInfo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>2nd</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>3rd</servlet-name>
+		<servlet-class>personInfo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>3rd</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+</web-app>
