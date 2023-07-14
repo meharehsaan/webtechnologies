@@ -75,3 +75,14 @@ books. The application should use the GET method for reading, and the POST metho
         => Mysql connector 8.0.33 is used
         => Tomcat Server 10.1.10 is used
         => I have also added database in this lab
+        
+#-----------------------------------Lab09-------------------------@Survlet and JDB
+
+Remove **Arraylist** in **personInfo class** to make code work properly according to input output because of ArrayList same record show **multiple** entries.
+Add your MySQL connector jar file in lib folder and compile the code.
+Remove **cj** from **cm.mysql.cj.jdbc.driver** because it is used in **linux** if you are not using linux.
+Add your **MySQL** server password in the connection function
+
+<br>
+
+You can make a Pull Request if you remove **ArrayList** from code and code is working properly with perfect **output**.
