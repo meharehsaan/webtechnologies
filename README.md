@@ -10,16 +10,16 @@ Github :: [meharehsaan](https://www.github.com/meharehsaan/webtechnologies)
   - Source code to check builtin functions written by java
 - **Java Practice**
   - Contains some additional programs I practiced.
-- **Lab01** => cmdline arguments
-- **Lab02** => Polymorphism
-- **Lab03** => Array and Exception
-- **Lab04** => File and Exception Handling
-- **Lab05** => JDBC
-- **Lab06** => HTML
-- **Lab07** => JavaScript
-- **Lab08** => Survlet and CRUD
-- **Lab09** => Survlet and JDBC
-- **Lab10** => Survlet State Managment 
+- Lab01 **=>** cmdline arguments
+- Lab02 **=>** Polymorphism
+- Lab03 **=>** Array and Exception
+- Lab04 **=>** File and Exception Handling
+- Lab05 **=>** JDBC
+- Lab06 **=>** HTML
+- Lab07 **=>** JavaScript
+- Lab08 **=>** Survlet and CRUD
+- Lab09 **=>** Survlet and JDBC
+- Lab10 **=>** Survlet State Managment 
 
 <br>
 
@@ -28,10 +28,16 @@ Github :: [meharehsaan](https://www.github.com/meharehsaan/webtechnologies)
 
 On my Ubuntu 23.04 (Lunar Lobster) having kernal 6.2 I have following configurations of java environment.
 
-- export **PATH="$PATH:/home/mehar/.local/bin"**
-- export **CLASSPATH="$CLASSPATH:/usr/share/java/mysql-connector-j-8.0.33.jar:/home/mehar/webtomcat/apache-tomcat-10.1.10/lib/servlet-api.jar:/home/mehar/webtomcat/apache-tomcat-10.1.10/lib/jsp-api.jar:."**
-- export **CATALINA_HOME="/home/mehar/webtomcat/apache-tomcat-10.1.10"**
-- export **JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"**
+```
+export PATH="$PATH:/home/mehar/.local/bin"
+
+export CATALINA_HOME="/home/mehar/webtomcat/apache-tomcat-10.1.10"
+
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
+
+export CLASSPATH="$CLASSPATH:/usr/share/java/mysql-connector-j-8.0.33.jar:/home/mehar/webtomcat/apache-tomcat-10.1.10/lib/servlet-api.jar:/home/mehar/webtomcat/apache-tomcat-10.1.10/lib/jsp-api.jar:."
+
+```
 
 <br>
 
@@ -41,10 +47,20 @@ On my Ubuntu 23.04 (Lunar Lobster) having kernal 6.2 I have following configurat
 This repo contains all Java codes of
 - Java **GUI**
 - Basic **OOP** concepts
+- **Polymorphism**
+- **Streams**
+- **Serialization**
 - **ArrayList**
+- **Threads**
+- **Sockets**
 - **Exception** Handling
 - **Database** Connectivity
+- **HttpSurvlet**
 - Survlet **CRUD** application
+- [Signuplogin-website](https://github.com/meharehsaan/miniprojects/tree/master/Signuploginapp-java)
+  - sessions
+  - cookies
+  - JSP
 
 <br>
 
@@ -148,7 +164,7 @@ Design a small **web** application that support the login of two different type 
 
 - Courses and their registration must be saved **manually** in course and courseAssignment tables.
 - You are allowed to make any necessary **amendments** in the columns of table (e.g., adding any auto-incremental key as primary key) however, the name of the table must be the same.
-- You need to implement the relationship of **primary** **key** and **foreign** **key** in database.
+- You need to implement the relationship of **primary key** and **foreign key** in database.
 - Any type of users cannot proceed without **logging**-**in** and each user is only capable to view his/her own dashboard. (Hint: use session handling). Save the email and **user_type** in session after successful logged-in, and perform the check on their respective **dashboards**.
 - HTML forms should be validated using JavaScript/place-holders.
 - All users should be able to **logout** and after that they should not be able to view their **homepage**.
